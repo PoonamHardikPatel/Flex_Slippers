@@ -14,3 +14,5 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Changed "index.cshtml" page
 - Test the application
 - Test Done... All Good!!!
+
+- Commit all changes to GitHub!!!
