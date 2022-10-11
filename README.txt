@@ -10,3 +10,7 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 
 - Logged into my GitHub Account
 - Create Repositories
+
+- Changed "index.cshtml" page
+- Test the application
+- Test Done... All Good!!!
