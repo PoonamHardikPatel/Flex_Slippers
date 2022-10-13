@@ -16,3 +16,26 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Test Done... All Good!!!
 
 - Commit all changes to GitHub!!!
+
+
+//-------------------------------------------------------------------
+
+
+2022-10-13 12:37am  
+
+/** Step - 2 - Add a data model class **/
+
+- Find & Write all properties regarding my product.
+- Create a data model class - named : "Slipper.cs"
+
+
+2022-10-13 01:08am
+
+- Check all packages in - "Dependencies > Packages"
+- Change the all versions from - "Tools > NuGet Package Manager > Manage NuGet Packages for Solution"
+
+- Rebuild the Application... Sucessfully done...
+- Test the application
+- Test Done... All Good!!!
+
+- Commit all changes to GitHub!!!
