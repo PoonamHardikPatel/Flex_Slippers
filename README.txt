@@ -90,3 +90,21 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Rebuild the Application... Sucessfully done...
 - Test the application - Test Done... All Good!!!
 - Commit all changes to GitHub!!!
+
+
+2022-10-13 09:53pm
+
+- Open and Update "Views/Shared/_Layout.cshtml" file...
+	- Added link on Application title in header...
+
+
+2022-10-13 10:02pm
+
+- Next step to Checked the database server with the SQL Server 
+- Open "View" menu :
+	- Open "SQL Server Object Explorer"
+	- Find your database and Check the options that - "View Designer" and "View Data"
+
+- Rebuild the Application... Sucessfully done...
+- Test the application - Test Done... All Good!!!
+- Commit all changes to GitHub!!!
