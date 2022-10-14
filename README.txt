@@ -175,6 +175,6 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Test the application - Test Done... All Good!!!
 
 - Create folder in "wwwroot/images" 
-- Add images in this created folder 
+- Add images in this created folder and try to add images
 
 - Open this file and write about our fictional company.
