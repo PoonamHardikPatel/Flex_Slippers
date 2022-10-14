@@ -16,7 +16,7 @@ namespace Flex_Slippers.Models
                 serviceProvider.GetRequiredService<
                     DbContextOptions<Flex_SlippersContext>>()))
             {
-                // Look for any movies.
+                // Look for any Slippers.
                 if (context.Slipper.Any())
                 {
                     return;   // DB has been seeded

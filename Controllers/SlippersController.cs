@@ -20,10 +20,64 @@ namespace Flex_Slippers.Controllers
         }
 
         // GET: Slippers
+        /*
         public async Task<IActionResult> Index()
         {
             return View(await _context.Slipper.ToListAsync());
         }
+        */
+
+        //-----------------------------------------------------------------------------------
+
+        /*
+        public async Task<IActionResult> Index(string searchString)
+        {
+            var flexslippers = from m in _context.Slipper
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                flexslippers = flexslippers.Where(s => s.Department.Contains(searchString));
+            }
+
+            return View(await flexslippers.ToListAsync());
+        }
+        */
+
+        public async Task<IActionResult> Index(string slipperMaterial, string searchString)
+        {
+            var flexslippers = from m in _context.Slipper
+                         select m;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                flexslippers = flexslippers.Where(s => s.Department.Contains(searchString));
+            }
+
+
+
+            // Use LINQ to get list of Material.
+            IQueryable<string> MaterialQuery = from m in _context.Slipper
+                                               orderby m.Material
+                                               select m.Material;
+
+            if (!string.IsNullOrEmpty(slipperMaterial))
+            {
+                flexslippers = flexslippers.Where(x => x.Material == slipperMaterial);
+            }
+
+
+
+            var slipperMaterialVM = new SlipperMaterialViewModel
+            {
+                Materials = new SelectList(await MaterialQuery.Distinct().ToListAsync()),
+                Slippers = await flexslippers.ToListAsync()
+            };
+
+            return View(slipperMaterialVM);
+        }
+
+        //-----------------------------------------------------------------------------------
 
         // GET: Slippers/Details/5
         public async Task<IActionResult> Details(int? id)

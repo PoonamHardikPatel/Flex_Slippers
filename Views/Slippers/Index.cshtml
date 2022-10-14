@@ -1,4 +1,6 @@
-﻿@model IEnumerable<Flex_Slippers.Models.Slipper>
+﻿@*@model IEnumerable<Flex_Slippers.Models.Slipper>*@
+
+@model Flex_Slippers.Models.SlipperMaterialViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -9,38 +11,54 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+
+<form asp-controller="Slippers" asp-action="Index" method="get">
+    <p>
+        Material : 
+        <select asp-for="SlipperMaterial" asp-items="Model.Materials">
+            <option value="">All</option>
+        </select>
+
+        Deparment: 
+        <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.TypeOfProduct)
+                @Html.DisplayNameFor(model => model.Slippers[0].TypeOfProduct)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Department)
+                @Html.DisplayNameFor(model => model.Slippers[0].Department)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price)
+                @Html.DisplayNameFor(model => model.Slippers[0].Price)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Size)
+                @Html.DisplayNameFor(model => model.Slippers[0].Size)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Width)
+                @Html.DisplayNameFor(model => model.Slippers[0].Width)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Material)
+                @Html.DisplayNameFor(model => model.Slippers[0].Material)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DescOfProduct)
+                @Html.DisplayNameFor(model => model.Slippers[0].DescOfProduct)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ManufacturingDt)
+                @Html.DisplayNameFor(model => model.Slippers[0].ManufacturingDt)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Slippers) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.TypeOfProduct)

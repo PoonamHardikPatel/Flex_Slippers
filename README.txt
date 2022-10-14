@@ -116,11 +116,34 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Enter Data as per your product in "SeedData.cs" file
 - Completed "SeedData.cs" file and add 12 rows of data.
 
+- Now Run Command - "Update-Database -Context Flex_SlippersContext"
+- Command successfully executed...
+
 - Rebuild the Application... Sucessfully done...
 - Test the application - Test Done... All Good!!!
 - Commit all changes to GitHub!!!
 
 
 - Open and Update "Slipper.cs" file
+- Give "Display" properti in the fields
 - Run and Show the results...
 
+
+2022-10-13 11:20pm
+
+- Started with Searching options : 
+- Give a searching on "Department" field.
+- For taht, first open "SlippersController.cs" file.
+- Update the async "Index" method with one parameters for search option on "Department" feild.
+- Update the "Index.cshtml" file of "Slippers" folder
+- Add form for "Department" seraching option and submiting data 
+
+- Create one more class file - named : "SlipperMaterialViewModel.cs"
+- Then, again Update the async "Index" method with two parameters 
+	- for search option on "Department" feild and dropdown option on "Material" field.
+- Update the "Index.cshtml" file of "Slippers" folder
+- Add form for "Department" seraching and "Material" dropdown option and submiting data 
+
+- Rebuild the Application... Sucessfully done...
+- Test the application - Test Done... All Good!!!
+- Commit all changes to GitHub!!!
