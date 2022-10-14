@@ -119,3 +119,8 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Rebuild the Application... Sucessfully done...
 - Test the application - Test Done... All Good!!!
 - Commit all changes to GitHub!!!
+
+
+- Open and Update "Slipper.cs" file
+- Run and Show the results...
+
