@@ -4,14 +4,16 @@ using Flex_Slippers.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Flex_Slippers.Migrations
 {
     [DbContext(typeof(Flex_SlippersContext))]
-    partial class Flex_SlippersContextModelSnapshot : ModelSnapshot
+    [Migration("20221014061402_Rating")]
+    partial class Rating
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

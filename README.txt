@@ -147,3 +147,34 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Rebuild the Application... Sucessfully done...
 - Test the application - Test Done... All Good!!!
 - Commit all changes to GitHub!!!
+
+
+2022-10-14 01:23am
+
+- Adding "Rating" property in "Slipper.cs" file
+- Applied "Range" validation 1-5 on this feild
+- Edit the /Views/Movies/Index.cshtml file and add a Rating field.
+- Update the /Views/Movies/Create.cshtml with a Rating field.
+- Update the /Views/Movies/Delete.cshtml with a Rating field.
+- Update the /Views/Movies/Details.cshtml with a Rating field.
+- Update the /Views/Movies/Edit.cshtml with a Rating field.
+- Update the "SeedData.cs" file and add Rating feild data in it.
+
+
+//-------------------------------------------------------------------
+
+
+2022-10-14 12:02pm
+
+- Create "AboutUs.cshtml" file in "Views/Home" folder
+- Open and Update "HomeController.cshtml" file 
+- Add Acion for "AboutUs" in controller
+- Add a link in the header of the "Views/Shared/_Layout.cshtml" file
+
+- Rebuild the Application... Sucessfully done...
+- Test the application - Test Done... All Good!!!
+
+- Create folder in "wwwroot/images" 
+- Add images in this created folder 
+
+- Open this file and write about our fictional company.

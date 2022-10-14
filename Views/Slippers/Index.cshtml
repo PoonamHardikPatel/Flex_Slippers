@@ -52,6 +52,9 @@
                 @Html.DisplayNameFor(model => model.Slippers[0].DescOfProduct)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Slippers[0].Rating)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Slippers[0].ManufacturingDt)
             </th>
             <th></th>
@@ -80,6 +83,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DescOfProduct)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ManufacturingDt)
