@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\images\img1.png" />
+    <None Include="wwwroot\images\img2.png" />
+    <None Include="wwwroot\images\img3.png" />
+    <None Include="wwwroot\images\img4.png" />
+    <None Include="wwwroot\images\img5.png" />
+    <None Include="wwwroot\images\img6.png" />
+    <None Include="wwwroot\images\img7.png" />
+    <None Include="wwwroot\images\img8.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.16" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.16" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.16" />

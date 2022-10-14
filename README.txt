@@ -174,7 +174,25 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Rebuild the Application... Sucessfully done...
 - Test the application - Test Done... All Good!!!
 
+- Try to add "iamges" folder in main folder, but it's not working properly
+- so tried with differnt way
+- i.e, close the VS 2019 
+- and then create a "images" folder in local and open project and solution file in VS 2019.
+- Then Commit Images folder 
 - Create folder in "wwwroot/images" 
 - Add images in this created folder and try to add images
 
-- Open this file and write about our fictional company.
+
+2022-10-14 05:45pm
+
+- Open "AboutUs" file and write about our fictional company.
+- Write all the detals of the company with photos, staff, and product information.
+
+- Change all the CSS and apply changes about font, images, paragraph etc...
+
+
+- Rebuild the Application... Sucessfully done...
+- Test the application - Test Done... All Good!!!
+- Commit all changes to GitHub!!!
+
+- All Done .... Yeeeeeeepeeeeeeee!!!!!!!
