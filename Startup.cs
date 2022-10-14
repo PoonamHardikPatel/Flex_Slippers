@@ -33,15 +33,19 @@ namespace Flex_Slippers
                     Configuration.GetConnectionString("DefaultConnection")));
             */
 
-            services.AddDbContext<Flex_SlippersContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("Flex_SlippersContext")));
+            services.AddDbContext<ApplicationDbContext>(options =>
+                //options.UseSqlServer(
+                //Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("Flex_SlippersContext")));
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddDbContext<Flex_SlippersContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("Flex_SlippersContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

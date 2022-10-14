@@ -51,3 +51,28 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Rebuild the Application... Sucessfully done...
 - Test the application - Test Done... All Good!!!
 - Commit all changes to GitHub!!!
+
+
+2022-10-13 08:27pm
+
+- Rebuild the Application... Sucessfully done...
+- Test the application - Test Done... All Good!!!
+
+- Open and Update "appsettings.json" file
+
+- Now it's time to - Scaffold Slipper pages
+- Getting Error "No Parameter"
+- Open and Update "Startup.cs" file
+- Solve the error..
+
+- Scffolding Done ...
+- One new controller file added in the list 
+	- named : "SlippersController.cs" file
+- One new folder added in "Views" folder 
+	- named : "Sleppers" folder
+- Created new files in "Slippers" folder 
+	- named : "Create.cshtml", "Delete.cshtml", "Details.cshtml", "Edit.cshtml", "Index.cshtml"
+
+- Rebuild the Application... Sucessfully done...
+- Test the application - Test Done... All Good!!!
+- Commit all changes to GitHub!!!
