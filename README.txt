@@ -108,3 +108,14 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Rebuild the Application... Sucessfully done...
 - Test the application - Test Done... All Good!!!
 - Commit all changes to GitHub!!!
+
+
+2022-10-13 10:10pm
+
+- Create "SeedData.cs" file in "Models" folder
+- Enter Data as per your product in "SeedData.cs" file
+- Completed "SeedData.cs" file and add 12 rows of data.
+
+- Rebuild the Application... Sucessfully done...
+- Test the application - Test Done... All Good!!!
+- Commit all changes to GitHub!!!
