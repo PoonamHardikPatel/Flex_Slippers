@@ -7,33 +7,39 @@ namespace Flex_Slippers.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<decimal>(
-                name: "Price",
+                name: "Size",
                 table: "Slipper",
-                type: "decimal(20, 2)",
+                type: "decimal(18, 2)",
                 nullable: false,
                 oldClrType: typeof(decimal),
-                oldType: "decimal(18,2)");
+                oldType: "decimal(18, 1)");
 
-            migrationBuilder.AddColumn<int>(
+            migrationBuilder.AlterColumn<decimal>(
                 name: "Rating",
                 table: "Slipper",
+                type: "decimal(18, 2)",
                 nullable: false,
-                defaultValue: 0);
+                oldClrType: typeof(decimal),
+                oldType: "decimal(18, 1)");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "Rating",
-                table: "Slipper");
-
             migrationBuilder.AlterColumn<decimal>(
-                name: "Price",
+                name: "Size",
                 table: "Slipper",
-                type: "decimal(18,2)",
+                type: "decimal(18, 1)",
                 nullable: false,
                 oldClrType: typeof(decimal),
-                oldType: "decimal(20, 2)");
+                oldType: "decimal(18, 2)");
+
+            migrationBuilder.AlterColumn<decimal>(
+                name: "Rating",
+                table: "Slipper",
+                type: "decimal(18, 1)",
+                nullable: false,
+                oldClrType: typeof(decimal),
+                oldType: "decimal(18, 2)");
         }
     }
 }

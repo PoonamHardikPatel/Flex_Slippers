@@ -149,6 +149,9 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Commit all changes to GitHub!!!
 
 
+//-------------------------------------------------------------------
+
+
 2022-10-14 01:23am
 
 - Adding "Rating" property in "Slipper.cs" file
@@ -159,6 +162,13 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Update the /Views/Movies/Details.cshtml with a Rating field.
 - Update the /Views/Movies/Edit.cshtml with a Rating field.
 - Update the "SeedData.cs" file and add Rating feild data in it.
+
+ Next step is - Migration of "Rating" feild
+- Open "NuGet Package Manager Console"
+- Run command - "Add-Migration Rating -Context Flex_SlippersContext"
+- Command successfully executed...
+- Now Run Command - "Update-Database -Context Flex_SlippersContext"
+- Command successfully executed...
 
 
 //-------------------------------------------------------------------
@@ -194,5 +204,22 @@ Purpose : Create a ASP.NET Core Web App - named : Flex_Slippers
 - Rebuild the Application... Sucessfully done...
 - Test the application - Test Done... All Good!!!
 - Commit all changes to GitHub!!!
+
+
+//-------------------------------------------------------------------
+
+
+2022-10-16 10:16pm
+
+- Updating "Rating" property in "Slipper.cs" file
+- Changed decimal datatype on "Range" feild because we want half rating too.
+- Delete that old "Data/Migrations/0000000000_Rating.cs" file
+
+Next step is - Migration of "Rating" feild
+- Open "NuGet Package Manager Console"
+- Run command - "Add-Migration Rating -Context Flex_SlippersContext"
+- Command successfully executed...
+- Now Run Command - "Update-Database -Context Flex_SlippersContext"
+- Command successfully executed...
 
 - All Done .... Yeeeeeeepeeeeeeee!!!!!!!

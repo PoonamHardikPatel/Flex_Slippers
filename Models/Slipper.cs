@@ -26,6 +26,7 @@ namespace Flex_Slippers.Models
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
 
+
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Size { get; set; }
 
@@ -48,7 +49,8 @@ namespace Flex_Slippers.Models
 
 
         [Range(1, 5)]
-        public int Rating { get; set; }
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal Rating { get; set; }
 
 
         [Display(Name = "Manufacturing Date")]
